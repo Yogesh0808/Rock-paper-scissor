@@ -16,16 +16,10 @@ possiblechoices.forEach((possibleChoice) =>
 
 function generatecomputerChoice() {
     const random = Math.floor(Math.random() * possiblechoices.length) + 1; //or *3
+    if (random == 1) computerChoice = "Rock";
+    if (random == 2) computerChoice = "Paper";
+    if (random == 3) computerChoice = "Scissor";
 
-    if (random == 1) {
-        computerChoice = "Rock";
-    }
-    if (random == 2) {
-        computerChoice = "Paper";
-    }
-    if (random == 3) {
-        computerChoice = "Scissor";
-    }
     computerChoiced.innerHTML = computerChoice;
 }
 
