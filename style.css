@@ -9,9 +9,10 @@
 :root {
     --dk-blue: #1d3557;
     --white: #f1faee;
-    --red: #e63946;
+    --red: #9e2a2b;
     --sky-blue: #a8dadc;
-    --green: #52b788;
+    --green: #1b4332;
+    --orange: #e09f3e;
 }
 body {
     background-color: var(--sky-blue);
@@ -55,7 +56,6 @@ button:hover {
 }
 
 .gif {
-    height: 29vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,12 +63,15 @@ button:hover {
 }
 .gif img {
     height: 100%;
-    width: auto;
+    width: 20vw;
     user-select: none;
 }
 
 @media screen and (max-width: 480px) {
     .game-container {
         width: 80vw;
+    }
+    .gif img {
+        width: 50vw;
     }
 }
